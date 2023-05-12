@@ -392,7 +392,7 @@ func (m *Mount) isFscryptSetupAllowed() bool {
 		return true
 	}
 	switch m.FilesystemType {
-	case "ext4", "f2fs", "ubifs", "btrfs", "ceph", "xfs", "lustre":
+	case "ext4", "f2fs", "ubifs", "btrfs", "ceph", "xfs", "lustre", "fuse.ceph-fuse":
 		return true
 	default:
 		return false
